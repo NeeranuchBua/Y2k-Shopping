@@ -17,11 +17,13 @@
         </div>
     </div>
     <div class="py-12">
-        <div class="mt-5 mx-auto sm:px-6 lg:px-8">
+        <div class="w-40 mt-5  sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800  mx-auto overflow-hidden shadow-sm sm:rounded-lg">
                 <div class ="p-6 text-gray-900 dark:text-gray-100 text-center">
-                <input type="submit" name="submit" value="Let's Get Started..."> 
-                  
+                <!-- <input type="submit" name="submit" value="Let's Get Started...">  -->
+                <a href = "/productpage" >Let's Get Started... </a>
+                </div>
+                
                 </div>
             </div>
         </div>
