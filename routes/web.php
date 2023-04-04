@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/productpage', function () {
-    return view('productpage');
-})->middleware(['auth', 'verified'])->name('productpage');
+Route::get('/productpage', [OrderController::class, 'get_products'])->middleware(['auth', 'verified'])->name('productpage');
+Route::get('/cartpage', [OrderController::class, 'get_carts'])->middleware(['auth', 'verified'])->name('cartpage');
+Route::get('/summarypage', [OrderController::class, 'get_summarys'])->middleware(['auth', 'verified'])->name('summarypage');
 
 
 Route::middleware('auth')->group(function () {

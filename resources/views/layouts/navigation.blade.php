@@ -16,6 +16,21 @@
                         {{ __('Home Page') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('productpage')" :active="request()->routeIs('productpage')">
+                        {{ __('Products Page') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('cartpage')" :active="request()->routeIs('cartpage')">
+                        {{ __('Carts Page') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('summarypage')" :active="request()->routeIs('summarypage')">
+                        {{ __('Summarys Page') }}
+                    </x-nav-link>
+                </div>
                 <!-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('eiei') }}
@@ -74,6 +89,21 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('productpage')" :active="request()->routeIs('productpage')">
+                {{ __('Products') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('cartpage')" :active="request()->routeIs('cartpage')">
+                {{ __('Carts') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('summarypage')" :active="request()->routeIs('summarypage')">
+                {{ __('Summarys') }}
             </x-responsive-nav-link>
         </div>
 
